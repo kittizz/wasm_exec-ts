@@ -1,5 +1,6 @@
 import { performance } from "perf_hooks"
 import fs from "fs"
+import util from "util"
 const getRandomValues = require("get-random-values")
 if (typeof global !== "undefined") {
     // global already exists
@@ -57,9 +58,9 @@ Object.defineProperties(globalThis, {
     },
 })
 
-const util = require("util")
+// const util = require("util")
 
-const encoder = new util.TextEncoder("utf-8")
+const encoder = new util.TextEncoder()
 const decoder = new util.TextDecoder("utf-8")
 class Go {
     importObject: Record<string, any>
