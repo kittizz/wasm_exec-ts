@@ -1,6 +1,6 @@
 {
     "name": "wasm_exec-ts",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "golang wasm_exec on typescript for node, etc..",
     "main": "./dist/index.js",
     "types": "./dist/main.d.ts",
