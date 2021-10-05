@@ -1,9 +1,12 @@
 {
     "name": "wasm_exec-ts",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "golang wasm_exec on typescript for node, etc..",
     "main": "./dist/index.js",
     "types": "./dist/main.d.ts",
+    "files": [
+        "./src"
+    ],
     "prepublish": "tsc",
     "author": "kittizz",
     "license": "MIT",
