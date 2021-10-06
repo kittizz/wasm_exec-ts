@@ -42,7 +42,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Load = void 0;
 var perf_hooks_1 = require("perf_hooks");
 var fs_1 = __importDefault(require("fs"));
-var util_1 = __importDefault(require("util"));
 var getRandomValues = require("get-random-values");
 if (typeof global !== "undefined") {
     // global already exists
@@ -99,9 +98,9 @@ Object.defineProperties(globalThis, {
         enumerable: true,
     },
 });
-// const util = require("util")
-var encoder = new util_1.default.TextEncoder();
-var decoder = new util_1.default.TextDecoder("utf-8");
+var util = require("util");
+var encoder = new util.TextEncoder();
+var decoder = new util.TextDecoder("utf-8");
 var Go = /** @class */ (function () {
     function Go() {
         var _this = this;
